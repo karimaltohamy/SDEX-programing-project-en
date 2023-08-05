@@ -1,0 +1,386 @@
+$primary-color: #5a57f6;
+$dark-color: #191d28;
+
+// start features_you_need
+.features_you_need {
+  padding: 80px 0;
+
+  .title {
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .desc {
+    color: gray;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 70px;
+
+    .box {
+      text-align: center;
+
+      &:nth-child(2) {
+        .icon {
+          background-color: #ff6b35;
+        }
+      }
+
+      &:nth-child(3) {
+        .icon {
+          background-color: #111827;
+        }
+      }
+
+      .icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+        background-color: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 15px;
+
+        i {
+          font-size: 35px;
+          color: white;
+        }
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 25px;
+      }
+
+      p {
+        color: gray;
+      }
+    }
+  }
+
+  .line {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 60px;
+
+    > div {
+      width: 50%;
+    }
+
+    .box {
+      padding: 40px;
+      border-radius: 12px;
+      background-color: #fbddd3;
+      position: relative;
+
+      &:nth-child(2) {
+        background-color: #cddafb;
+      }
+
+      .title {
+        font-size: 22px;
+      }
+
+      .desc {
+        color: gray;
+        margin-bottom: 7px;
+        font-size: 17px;
+      }
+
+      .btn_start {
+        padding: 6px 20px;
+        display: inline-block;
+        border: 2px solid $primary-color;
+        color: $primary-color !important;
+        border-radius: 5px;
+        margin-top: 15px;
+      }
+
+      .img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .features_you_need {
+    padding: 40px 0;
+
+    .title {
+      font-size: 24px;
+    }
+
+    .desc {
+      font-size: 14px;
+    }
+
+    .boxs {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 40px;
+
+      .box {
+        .icon {
+          width: 50px;
+          height: 50px;
+
+          i {
+            font-size: 25px;
+          }
+        }
+
+        h3 {
+          font-size: 21px;
+          margin-bottom: 1px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .line {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
+
+      > div {
+        width: 100%;
+      }
+
+      .box {
+        padding: 20px;
+
+        .title {
+          font-size: 20px;
+        }
+
+        .desc {
+          margin-bottom: 3px;
+          font-size: 15px;
+        }
+
+        .btn_start {
+          padding: 4px 15px;
+          font-size: 15px;
+        }
+
+        .img {
+          img {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+// end features_you_need
+
+// start services_boxs
+.services_boxs {
+  padding: 60px 0;
+
+  .boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+
+    .box {
+      padding: 30px;
+      border-radius: 10px;
+      background-color: #e8edfd;
+      transition: all 0.4s;
+
+      &:hover {
+        transform: scale(0.9);
+      }
+
+      .icon {
+        img {
+          width: 60px;
+          margin-bottom: 15px;
+        }
+      }
+
+      h4 {
+        font-size: 22px;
+      }
+
+      p {
+        color: gray;
+        line-height: 1.7;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services_boxs {
+    padding: 30px 0;
+
+    .boxs {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+
+      .box {
+        padding: 20px;
+
+        .icon {
+          img {
+            width: 50px;
+            margin-bottom: 10px;
+          }
+        }
+
+        h4 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+// end services_boxs
+
+// start why_choose_us
+.why_choose_us {
+  padding: 70px 0;
+  background-color: #e8edfd;
+
+  .line {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    > div {
+      width: 50%;
+    }
+
+    .left {
+      .subtitle {
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary-color;
+      }
+
+      .title {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .desc {
+        font-size: 17px;
+        color: gray;
+        line-height: 1.7;
+      }
+
+      .features {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+
+        .feature {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          img {
+            width: 60px;
+          }
+
+          svg {
+            width: 60px;
+          }
+
+          h4 {
+            font-weight: 6000;
+            margin-bottom: 5px;
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .right {
+      .image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .why_choose_us {
+    padding: 30px 0;
+
+    .line {
+      flex-direction: column;
+      gap: 20px;
+
+      > div {
+        width: 100%;
+      }
+
+      .left {
+        text-align: center;
+
+        .title {
+          font-size: 22px;
+        }
+
+        .desc {
+          font-size: 14px;
+        }
+
+        .features {
+          gap: 15px;
+
+          .feature {
+            flex-direction: column;
+            gap: 4px;
+
+            img {
+              width: 50px;
+            }
+
+            h5 {
+              font-size: 20px;
+              margin: 0;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end why_choose_us

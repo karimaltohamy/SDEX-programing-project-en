@@ -1,6 +1,10 @@
 @use "../components/header";
 @use "../components/footer";
 @use "../pages/index";
+@use "../pages/about-us";
+@use "../pages/our-services";
+@use "../pages/projects";
+@use "../pages/project-details";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
@@ -44,7 +48,7 @@ main {
   background-position: center center;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   position: relative;
   overflow: hidden;
   z-index: 1;
