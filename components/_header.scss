@@ -11,12 +11,10 @@ header {
     justify-content: space-between;
 
     .logo {
-      h3 {
-        font-size: 30px;
-        font-weight: 700;
-        background: linear-gradient(45deg, #8785f1 0%, $primary-color 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      img {
+        width: 100px;
+        background: #152247;
+        border-radius: 5px;
       }
     }
 
@@ -68,6 +66,12 @@ header {
     padding: 10px 0;
 
     .line {
+      .logo {
+        img {
+          width: 70px;
+        }
+      }
+
       .info {
         gap: 10px;
 
