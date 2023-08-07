@@ -72,6 +72,7 @@ $dark-color: #191d28;
             height: 500px;
             border-radius: 50%;
             background-color: #ffe484;
+            display: none;
           }
           img {
             width: 100%;
@@ -93,7 +94,7 @@ $dark-color: #191d28;
             }
 
             &:nth-child(3) {
-              top: 45px;
+              top: -50px;
               left: auto;
               right: 0;
               animation-delay: 3s;
@@ -169,6 +170,11 @@ $dark-color: #191d28;
             .icon {
               img {
                 width: 50px;
+              }
+
+              &:nth-child(3) {
+                top: -25px;
+                right: 100px;
               }
             }
           }

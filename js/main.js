@@ -1,3 +1,16 @@
+const headClick = document.querySelector(".lang_list .head");
+const list = document.querySelector(".lang_list .list");
+const headClick2 = document.querySelector(".lang_list2 .head");
+const list2 = document.querySelector(".lang_list2 .list");
+
+headClick.addEventListener("click", () => {
+  list.classList.toggle("active");
+});
+
+headClick2.addEventListener("click", () => {
+  list2.classList.toggle("active");
+});
+
 // menu
 const iconMenu = document.querySelector(".icon_menu");
 const overflow = document.querySelector(".overflow");
