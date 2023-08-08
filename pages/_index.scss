@@ -65,14 +65,13 @@ $dark-color: #191d28;
           &::before {
             content: "";
             position: absolute;
-            top: 45%;
-            left: 50%;
+            top: 51%;
+            left: 60%;
             transform: translate(-50%, -50%);
             width: 500px;
             height: 500px;
             border-radius: 50%;
             background-color: #ffe484;
-            display: none;
           }
           img {
             width: 100%;
@@ -106,16 +105,6 @@ $dark-color: #191d28;
           }
         }
       }
-    }
-  }
-
-  .hand_icon {
-    position: absolute;
-    left: 0;
-    top: 100px;
-
-    img {
-      width: 100px;
     }
   }
 }
@@ -165,6 +154,7 @@ $dark-color: #191d28;
             &::before {
               width: 250px;
               height: 250px;
+              top: 57%;
             }
 
             .icon {
@@ -179,15 +169,6 @@ $dark-color: #191d28;
             }
           }
         }
-      }
-    }
-
-    .hand_icon {
-      left: 0px;
-      top: 100px;
-
-      img {
-        width: 60px;
       }
     }
   }
@@ -257,6 +238,8 @@ $dark-color: #191d28;
 
         img {
           width: 50%;
+          object-fit: cover;
+          border-radius: 151px;
 
           &:nth-child(2) {
             transform: translateY(50px);
